@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<div class="w3-container w3-blue">
+	<h1 id="ixplora">iXplora</h1>
+  	<h3 id="titleSurvey">{{survey.title}}</h3>
+ </div>
+ <hr>
+<div class="w3-container w3-card-4">
+ 	<p id="pregunta">{{survey.pregunta}}</p>
+  	<div *ngFor="let i of answers">
+  		<input class="w3-radio"  type="radio" [value]="i" [(ngModel)]="selected">
+  		<label class="w3-validate">{{i}}</label><br>
+	</div>
+	<br>
+</div>  
+<hr>
+
+  	<button class="w3-button w3-blue" id="sendButton" (click)="sendAnswer()">Send Answer</button>
+  	
+  	<p>{{selected}}</p>

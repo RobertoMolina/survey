@@ -1,0 +1,16 @@
+#titleSurvey {
+	position: relative;
+	font-color: blue;
+	font-family: Serif;
+}
+
+#ixplora {
+	position: relative;
+	font-family: Serif;
+	color: white;
+}
+
+#sendButton{
+	position: relative;
+    left: 30px;
+}
